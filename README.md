@@ -23,21 +23,21 @@ First, you must prepare a subscription that takes filters and options.
 if (Meteor.isServer) {
     Meteor.publish('users', function (filters, options) {
         check(this.userId, String);
-    
+
         // Prepare filters
         filters = _.extend({
             // set default filters here
         }, filters, {
             // overwrite the filters here
         });
-    
+
         // Prepare options
         options = _.extend({
             sort: {username: 1},
             skip: 0,
             limit: 10
         }, options);
-    
+
         return Meteor.users.find(filters, options);
     });
 }
@@ -49,11 +49,11 @@ Then on the client, you can setup the pagination.
 <template name="users">
     <div>
         <ul>
-        {{#each users}}
+            {{#each users}}
             <li>User: {{username}}</li>
-        {{else}}
+            {{else}}
         </ul>
-        
+
         <!-- Insert the pagination named userList -->
         {{> pagination id="userList"}}
     </div>

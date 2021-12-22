@@ -1,6 +1,6 @@
 Package.describe({
     name: 'deathcookies:pagination',
-    version: '0.1.13',
+    version: '0.1.4',
     author: 'maedlerdaniel@gmail.com',
     summary: 'Pagination for subscription',
     homepage: 'https://github.com/DeathCookies/meteor-jalik-pagination',

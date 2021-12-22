@@ -6,12 +6,12 @@ A file system store for UploadFS.
 
 To install the package, execute this command in the root of your project :
 ```
-meteor add jalik:pagination
+meteor add deathcookies:pagination
 ```
 
 If later you want to remove the package :
 ```
-meteor remove jalik:pagination
+meteor remove deathcookies:pagination
 ```
 
 ### Create a Pagination

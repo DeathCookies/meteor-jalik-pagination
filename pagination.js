@@ -269,7 +269,7 @@ Pagination.prototype.set = function (name, value) {
  * @return {number}
  */
 Pagination.prototype.selectPage = function () {
-    return parseInt(window.prompt(i18n.t("Numéro de page")));
+    return parseInt(window.prompt('Springe zur Seite'));//i18n.t("Numéro de page")));
 };
 
 /**

@@ -1,10 +1,10 @@
 Package.describe({
-    name: 'jalik:pagination',
-    version: '0.1.1',
-    author: 'karl.stein.pro@gmail.com',
+    name: 'deathcookies:pagination',
+    version: '0.0.1',
+    author: 'maedlerdaniel@gmail.com',
     summary: 'Pagination for subscription',
-    homepage: 'https://github.com/jalik/jalik-pagination',
-    git: 'https://github.com/jalik/jalik-pagination.git',
+    homepage: 'https://github.com/DeathCookies/meteor-jalik-pagination',
+    git: 'https://github.com/DeathCookies/meteor-jalik-pagination.git',
     documentation: 'README.md',
     license: 'MIT'
 });
@@ -12,7 +12,7 @@ Package.describe({
 Package.onUse(function (api) {
     api.versionsFrom('1.1.0.2');
     api.use('check');
-    api.use('jalik:i18n@0.1.1');
+    //api.use('jalik:i18n@0.1.1');
     api.use('mongo');
     api.use('reactive-var');
     api.use('session', 'client');
